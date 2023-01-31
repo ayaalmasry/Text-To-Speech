@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+.wrapper{
+   width:40rem;
+    height: 350px;
+    padding: 2rem;
+    background: pink;
+    border-radius: .5rem;
+}
+.wrapper header{
+    text-align: center;
+    color:#fff;
+    font-size:3rem;
+    font-weight:bold;
+    margin-bottom: 1rem;
+}
+form{
+    margin: 1rem;
+}
+form .row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+form :where(textarea,select,button){
+    border:none;
+    outline:none;
+    width: 100%;
+   margin: .4rem;
+}
+form textarea{
+    resize: none;
+    height: 120px;
+}
+form .row label{
+    color:mediumpurple;
+    font-size:1.3rem;
+    
+}
+form button{
+    padding: 1rem;
+    width: calc(100% -20px);
+    background: mediumpurple;
+    color:#fff;
+}
